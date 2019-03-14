@@ -1,0 +1,209 @@
+body {
+	text-align: center;
+	margin: 0;
+	background-color: hsl(198, 97%, 34%);
+	color: hsl(198, 97%, 84%);
+	/*color: hsl(198, 97%, 34%);*/
+	font-family: "Yatra One";
+}
+
+nav {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: end;
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	padding: 0 30px 0 30px;
+	background-color: hsl(198, 97%, 34%);
+}
+
+.nav-link {
+	flex-basis: 10%;
+	padding-top: 25px;
+}
+
+a {
+	color: hsla(198, 97%, 84%);
+	text-decoration: none;
+}
+
+a:hover {
+
+	color: hsl(198, 97%, 14%);
+}
+
+nav a:hover {
+	background-color: hsl(198, 97%, 34%);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+main section {
+	flex: 1;
+	margin: 100px;
+	background-color: hsl(198, 97%, 10%);
+	padding: 30px;
+	border-radius: 20px;
+}
+
+.anchor {
+	position: absolute;
+	margin: -120px;
+}
+
+.section-header {
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+
+#welcome-section {
+	margin: 0;
+	padding: 40vh 0 0 0;
+	min-height: 60vh;
+	border-radius: 0;
+	color: hsl(198, 97%, 34%);
+	background:url(http://i63.tinypic.com/2m34chc.jpg);
+	background-size:cover;
+	background-position:center center;
+	background-attachment:fixed;
+}
+
+#welcome-section h1 {
+	font-size: 4em;
+	margin-bottom: 0;
+	text-shadow: 1px 1px hsl(198, 97%, 84%),
+				 2px 2px hsl(198, 97%, 84%);
+}
+
+img {
+	max-width: 100%;
+	border-radius: 20px;
+}
+
+#about-display {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#about-display div {
+	flex: 1;
+}
+
+#about-display p {
+	text-align: justify;
+	padding: 10px;
+}
+
+#profile-pic {
+  margin-bottom: 30px;
+}
+
+#projects-display {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.project-tile {
+	flex-basis: 30%;
+	margin: 20px 0;
+}
+
+.project-title {
+	font-size: 1.3em;
+}
+
+.explanation {
+	margin-top: 0;
+}
+
+#contact-display {
+	display: flex;
+	/*align-items: center;*/
+}
+
+
+#contact-display div {
+	flex: 1;
+	text-align: center;
+}
+
+#contact-display p {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#contact-display a {
+	margin: 10px;
+}
+
+#contact-display a:hover {
+	color: hsl(198, 97%, 34%);
+}
+
+#contact-display form {
+	text-align: left;
+}
+
+
+#contact-display input {
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+	margin: 5px 5px 25px 0;
+	background-color: hsl(198, 97%, 94%);
+}
+
+#contact-display textarea {
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+	margin: 5px 5px 15px 0;
+	background-color: hsl(198, 97%, 94%);
+}
+
+button {
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	background-color: hsl(198, 97%, 94%);
+}
+
+button:hover {
+	background-color: hsl(198, 97%, 34%);
+}
+
+footer {
+	color: hsl(198, 97%, 10%);
+}
+
+hr {
+	border: 0;
+	height: 1px; 
+	width: 90%;
+	background-image: linear-gradient(to right, hsla(198, 97%, 10%, 0), hsla(198, 97%, 10%, 0.75), hsla(198, 97%, 10%, 0));
+}
+
+
+@media (max-width: 750px) {
+	#about-display {
+		flex-direction: column;
+	}
+	#projects-display {
+		flex-direction: column;
+	}
+	#contact-display {
+		flex-direction: column;
+	}
+}
